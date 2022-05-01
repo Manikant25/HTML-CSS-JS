@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input</title>
+</head>
+<body>
+    <!-- Action is for backend -->
+    <form action="process.js">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="Name" name="name" value="Manikant">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="enter your email">
+    </div>
+    <div>
+        <label for="message">Message</label>
+      <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+        <option value="male" selected>Male</option>
+        <option value="female">Female</option>
+    </select>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+    </div>
+    <div>
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <div>
+        <label for="membership">MemberShip</label>
+        <input type="radio" name="membership" value="Simple" id="membership" checked> Simple
+        <input type="radio" name="membership" value="Standard" id="membership"> Standard
+        <input type="radio" name="membership" value="Super" id="membership"> Super
+
+    </div>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
