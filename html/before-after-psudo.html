@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After</title>
+    <style>
+        .is-required::after{
+            content: '*';
+            color: tomato;
+            padding-left: 2px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+            color: #fff;
+            margin: 0;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            
+        }
+        header::before {
+            content: ' ';
+            background: url('https://images.unsplash.com/photo-1594897030264-ab7d87efc473?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340') no-repeat center center/cover;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        header > h1 {
+           font-size: 4rem;
+           margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <label class="is-required" for="name">Name</label>
+    <input type="text"> -->
+    <header>
+        <h1>Hello Word</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, iste? Molestias, neque. Inventore consequatur repellat, placeat enim natus totam dignissimos. Reprehenderit velit explicabo magnam, dolor itaque incidunt! Veniam, repellat numquam.</p>
+    </header>
+    <section>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, animi enim mollitia natus, laborum nesciunt ipsam perferendis ea reiciendis ipsa, voluptatibus ut. Mollitia esse hic placeat consequatur praesentium! A dolorem error et in ratione esse nulla repudiandae sunt officia voluptatibus voluptatum tenetur obcaecati suscipit laboriosam reiciendis beatae, impedit, sequi inventore?
+
+        </p>
+        
+    </section>
+</body>
+</html>
