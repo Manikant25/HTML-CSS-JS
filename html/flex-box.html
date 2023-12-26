@@ -9,7 +9,8 @@
 
         #container {
             display: flex;
-            flex-direction: row;
+            /* Row is defualt, for vertical use column */
+            flex-direction: row; 
             padding: 15px;
             flex-wrap: wrap;
         }
@@ -18,12 +19,13 @@
         border: #ccc solid 1px;
         text-align: center;
         padding: 1rem;
+        /* This is like giving them weight */
         flex: 1;
         margin: 0.75rem;
       }
 
       .item:first-child {
-          flex: 1;
+           flex: 1;
       }
     </style>
   </head>
