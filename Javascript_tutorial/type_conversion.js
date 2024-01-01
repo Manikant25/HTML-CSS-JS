@@ -68,7 +68,7 @@ console.log(result5);  // 4
 
 // Arithmetic operation of undefined with number, boolean or null gives NaN
 
-let result;
+let result6;
 
 result = 4 + undefined;
 console.log(result);  // NaN
@@ -83,6 +83,32 @@ result = null + undefined;
 console.log(result);  // NaN
 
 
+// JavaScript Explicit Conversion
+let result7;
+// string to number
+result = Number('324');
+console.log(result); // 324
+
+result = Number('324e-1')  
+console.log(result); // 32.4
+
+// boolean to number
+result = Number(true);
+console.log(result); // 1
+
+result = Number(false);
+console.log(result); // 0
+
+// if a string is an invalid number, the result will be NaN
+let result8;
+result = Number('hello');
+console.log(result); // NaN
+
+result = Number(undefined);
+console.log(result); // NaN
+
+result = Number(NaN);
+console.log(result); // NaN
 
 
 
